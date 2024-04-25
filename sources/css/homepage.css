@@ -1,0 +1,62 @@
+body {
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+
+header button {
+    padding: 4px 20px !important;
+    border: 1px solid black !important;
+    border-radius: 50px !important;
+    transition: 0.3s;
+}
+.home h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.home span {
+    display: block;
+    font-size: 45px;
+    font-weight: 700;
+    color: #424EDE;
+}
+
+.home p {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.home input {
+    padding: 5px 20px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 15px;
+    caret-color: #424EDE;
+    color: #424EDE;
+}
+
+.home button {
+    padding: 8px 20px;
+    background-color: #424EDE;
+    font-size: 20px;
+    font-weight: 700;
+    border: none !important;
+    border-radius: 50px !important;
+    transition: 0.3s;
+}
+.home button:hover {
+    background-color: rgba(66, 78, 222, 0.47) !important;
+}
+.contact {
+    padding: 50px;
+}
+.contact h3 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.contact p {
+    color: black;
+    font-weight: 500;
+}

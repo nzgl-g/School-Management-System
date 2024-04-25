@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="./sources/css/homepage.css">
+	<link rel="stylesheet" href="./sources/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+<main>
+	<section class="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-sm-12 order-lg-1 order-2 text-lg-start text-center">
+					<div class="txt ">
+						<h1>
+							Welcome to Our
+						</h1>
+						<span>School Communication Portal</span>
+						<p>Stay in the loop with our school's web app! It's a tool for communication between
+							Teachers, parents. Get updates, announcements, and stay engaged whether you're a parent,
+							teacher</p>
+
+						<!-- Login form -->
+						<form class="inputs d-flex flex-column col-lg-6" action="access.php" method="post">
+							<!-- Input field for the user's ID -->
+							<label for="myid"></label><input class="mt-3" type="text" placeholder="Your ID" oncopy="return false;" id="myid" name="myid" autofocus="">
+							<!-- Input field for the user's password -->
+							<label for="mypassword"></label><input class="mt-3" type="password" placeholder="Password" oncopy="return false;" id="mypassword" name="mypassword">
+							<!-- Submit button for the login form -->
+							<button class=" btn mt-3" type="submit" value="login">Log in</button>
+						</form>
+						<!-- Contact information -->
+						<div class="contact mt-3">
+							<h3 class="m-0 p-0">Contact</h3>
+							<p class="m-0 p-0">Address: 123 Main Street, Chlef, Algeria</p>
+							<p class="m-0 p-0">Phone: +213(550)123456</p>
+							<p class="m-0 p-0">Email: example@example.com</p>
+						</div>
+					</div>
+				</div>
+				<!-- Image on the right side of the page -->
+				<div class="col-lg-5 col-sm-12 order-lg-2 order-1">
+					<img class="img-fluid" src="assets/buildiImages/loginPage.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+</body>
+</html>

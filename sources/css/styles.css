@@ -1,0 +1,160 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body {
+    font-family: Outfit, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+    text-align: center;
+}
+
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+nav a:hover {
+    color: #ffffff;
+    background-color: #1a8326;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    margin: 0 auto;
+    width: 500px;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+}
+input[type="radio"]:checked{
+    background-color: blue;
+}
+table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+table th.viewTable, table td.viewTable {
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+input.search {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+form.updateForm {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form.searchForm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.homePage{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+textarea {
+    margin: auto;
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
