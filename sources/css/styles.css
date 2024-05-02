@@ -1,5 +1,7 @@
 /* General Styling */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Layout */
 body {
     font-family: Outfit, sans-serif;
     font-weight: bold;
@@ -20,11 +22,36 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+main {
+    padding: 20px;
+    text-align: center;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
 
+form.updateForm {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form.searchForm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -32,7 +59,6 @@ nav ul {
     background-color: #eee;
     text-align: center;
 }
-
 
 nav li {
     display: inline-block;
@@ -49,41 +75,29 @@ nav a {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 nav a:hover {
     color: #ffffff;
     background-color: #1a8326;
     border-radius: 5px;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+/* Typography */
+header h1 {
+    margin: 0;
 }
 
 h2 {
     color: #333;
 }
 
-table {
-    margin: 0 auto;
-    width: 500px;
-    border-collapse: collapse;
-    border-radius: 10px;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
+/* Form elements */
 input[type="text"], input[type="password"]{
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
-
 }
 
 input[type="submit"] {
@@ -94,6 +108,7 @@ input[type="submit"] {
     cursor: pointer;
     border-radius: 5px;
 }
+
 input[type="radio"] {
     appearance: none;
     width: 16px;
@@ -102,18 +117,11 @@ input[type="radio"] {
     border-radius: 50%;
     outline: none;
 }
+
 input[type="radio"]:checked{
     background-color: blue;
 }
-table {
-    border-spacing: 10px;
-    border-collapse: separate;
-}
-table th.viewTable, table td.viewTable {
-    width: 250px;
-    overflow: hidden;
-    white-space: nowrap;
-}
+
 input.search {
     width: 20%;
     padding: 10px;
@@ -121,34 +129,7 @@ input.search {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-form.updateForm {
-    width: 30%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-form.searchForm{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.homePage{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
+
 textarea {
     margin: auto;
     width: 50%;
@@ -157,4 +138,38 @@ textarea {
     border: 1px solid #ddd;
     border-radius: 4px;
     resize: none;
+}
+
+/* Table elements */
+table {
+    margin: 0 auto;
+    width: 500px;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th.viewTable, table td.viewTable {
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Specific classes */
+.homePage{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 70%;
+    height: 70vh;
 }
